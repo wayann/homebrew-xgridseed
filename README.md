@@ -14,6 +14,10 @@ Installation
 
         brew doctor
 
+3. Untap nwoolls faboulous xgminer (yes it's wacky solution, if you got a clever way of doing it please tell me)
+
+        brew untap nwoolls/xgminer
+
 3. Tap this Homebrew repostory so that you can install packages from it:
 
         brew tap wayann/xgridseed
