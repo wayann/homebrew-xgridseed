@@ -1,7 +1,7 @@
 homebrew-xgridseed
 ==================
 
-brew formula to install bfgminer for gridseed
+brew formula to install bfgminer for gridseed, NB this is a hack waiting for bfgminer 4.0 where gridseed support will be included, so before going in to this mess check if bfgminer 4.0 is out.
 
 Installation
 ------------
