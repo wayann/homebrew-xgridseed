@@ -24,9 +24,6 @@ Installation
         
 4. Finally, install bfgminer:
 
-        brew install bfgminer
-        
-If you'd like to install the miner using the latest source from Github rather than the latest official package, use the --HEAD parameter:
 
         brew install bfgminer --HEAD
 
