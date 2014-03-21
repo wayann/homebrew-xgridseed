@@ -10,32 +10,25 @@ class Bfgminer < Formula
   depends_on 'automake' => :build
   depends_on 'libtool' => :build
   depends_on 'pkg-config' => :build
-  depends_on 'coreutils' => :build
+  depends_on 'uthash' => :build
   depends_on 'curl'
+  depends_on 'jansson'
+  depends_on 'libmicrohttpd'
+  depends_on 'libevent'
+  depends_on 'libusb'
+  depends_on 'hidapi'
 
   def install
-    inreplace "autogen.sh", "libtoolize", "glibtoolize"
-    inreplace "autogen.sh", "readlink", "greadlink"
-    system "autoreconf -fvi"
-    system "./autogen.sh", "--disable-debug", "--disable-dependency-tracking",
+    system "./autogen.sh"
+    system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "PKG_CONFIG_PATH=#{HOMEBREW_PREFIX}/opt/curl/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/jansson/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/libusb/lib/pkgconfig",
+                          "PKG_CONFIG_PATH=#{HOMEBREW_PREFIX}/opt/curl/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/jansson/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/libmicrohttpd/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/libusb/lib/pkgconfig:#{HOMEBREW_PREFIX}/opt/hidapi/lib/pkgconfig",
                           "--enable-scrypt",
-                          "--enable-bflsc",
-                          "--enable-bitforce",
-                          "--enable-icarus",
-                          "--enable-modminer",
-                          "--enable-ztex",
-                          "--enable-avalon",
-                          "--disable-adl",
-                          "--enable-opencl",
-                          "--enable-bitfury",
-                          "--enable-hashfast",
-                          "--enable-klondike"
+                          "--enable-opencl"
     system "make", "install"
   end
 
   test do
-    system "cgminer"
+    system "bfgminer"
   end
 end
