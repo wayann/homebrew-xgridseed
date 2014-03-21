@@ -14,7 +14,7 @@ Installation
 
         brew doctor
 
-3. Untap nwoolls faboulous xgminer (yes it's wacky solution, if you got a clever way of doing it please tell me)
+3. Optional: if you come from nwoolls you may untap his faboulous xgminer (yes it's wacky solution, if you got a clever way of doing it please tell me)
 
         brew untap nwoolls/xgminer
 
