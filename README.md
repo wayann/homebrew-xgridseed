@@ -14,8 +14,9 @@ Installation
 
         brew doctor
 
-3. Optional: if you come from nwoolls you may untap his faboulous xgminer (yes it's wacky solution, if you got a clever way of doing it please tell me)
+3. Optional: if you come from nwoolls you may untap his faboulous xgminer and also uninstall any previous bfgminer
 
+        brew uninstall bfgminer
         brew untap nwoolls/xgminer
 
 3. Tap this Homebrew repostory so that you can install packages from it:
