@@ -4,7 +4,7 @@ class Bfgminer < Formula
   homepage 'https://github.com/wayann/bfgminer'
   head 'https://github.com/wayann/bfgminer.git', :branch => 'feature/gridseed-support'
   url 'https://github.com/wayann/bfgminer/archive/feature/gridseed-support.tar.gz'
-  sha1 'b4fde7fb11f170866edf80ecb539bfbd2cb7ee5e'
+  sha1 'dd21a66c3513a7c05c3b60f81df18fc367aa169f'
 
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
