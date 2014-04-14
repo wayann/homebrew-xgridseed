@@ -1,10 +1,10 @@
 require 'formula'
 
 class Bfgminer < Formula
-  homepage 'https://github.com/luke-jr/bfgminer'
-  head 'https://github.com/luke-jr/bfgminer.git', :branch => 'gridseed'
-  url 'https://github.com/luke-jr/bfgminer/archive/bfgminer/gridseed.tar.gz'
-  sha1 '50c85427b5595f0d3b6ea82f611e17783d1b31ee'
+  homepage 'https://github.com/wayann/bfgminer'
+  head 'https://github.com/wayann/bfgminer.git', :branch => 'feature/gridseed-support'
+  url 'https://github.com/wayann/bfgminer/archive/feature/gridseed-support.tar.gz'
+  sha1 'dd21a66c3513a7c05c3b60f81df18fc367aa169f'
 
   depends_on 'autoconf' => :build
   depends_on 'automake' => :build
